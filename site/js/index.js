@@ -41,47 +41,63 @@ LoadOBJWithMTL('/continents/models/Earth/earth.mtl', '/continents/models/Earth/e
     earth.scale.set(2, 2, 2);
     scene.add(earth);
 
+    document.getElementById('1').style.backgroundColor = 'green';
+
     LoadOBJWithMTL('/continents/models/Africa/Africa.mtl', '/continents/models/Africa/Africa.obj', (afr) => {
         africa = afr;
         africa.scale.set(2, 2, 2);
         africa.visible = false;
         scene.add(africa);
 
+        document.getElementById('2').style.backgroundColor = 'green';
+
         LoadOBJWithMTL('/continents/models/Asia/Asia.mtl', '/continents/models/Asia/Asia.obj', (asi) => {
             asia = asi;
             asia.scale.set(2, 2, 2);
             asia.visible = false;
             scene.add(asia);
+    
+            document.getElementById('3').style.backgroundColor = 'green';
 
             LoadOBJWithMTL('/continents/models/Europe/Europe.mtl', '/continents/models/Europe/Europe.obj', (eur) => {
                 europe = eur; 
                 europe.scale.set(2, 2, 2);
                 europe.visible = false;
                 scene.add(europe);
+    
+                document.getElementById('4').style.backgroundColor = 'green';
 
                 LoadOBJWithMTL('/continents/models/NAmerica/NAmerica.mtl', '/continents/models/NAmerica/NAmerica.obj', (nam) => {
                     namerica = nam; 
                     namerica.scale.set(2, 2, 2);
                     namerica.visible = false;
                     scene.add(namerica);
+    
+                    document.getElementById('5').style.backgroundColor = 'green';
 
                     LoadOBJWithMTL('/continents/models/SAmerica/SAmerica.mtl', '/continents/models/SAmerica/SAmerica.obj', (sam) => {
                         samerica = sam; 
                         samerica.scale.set(2, 2, 2);
                         samerica.visible = false;
                         scene.add(samerica);
+    
+                        document.getElementById('6').style.backgroundColor = 'green';
 
                         LoadOBJWithMTL('/continents/models/Antartica/Antartica.mtl', '/continents/models/Antartica/Antartica.obj', (ant) => {
                             antartica = ant; 
                             antartica.scale.set(2, 2, 2);
                             antartica.visible = false;
                             scene.add(antartica);
+    
+                            document.getElementById('7').style.backgroundColor = 'green';
 
                             LoadOBJWithMTL('/continents/models/Australia/Australia.mtl', '/continents/models/Australia/Australia.obj', (aus) => {
                                 australia = aus; 
                                 australia.scale.set(2, 2, 2);
                                 australia.visible = false;
                                 scene.add(australia);
+
+                                document.body.removeChild(document.getElementById('loading'));
                             });
                         });
                     });

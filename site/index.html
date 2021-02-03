@@ -58,6 +58,24 @@
         #title h1 {
             margin: 0;
         }
+
+        #loading {
+            width: 50vw;
+            height: 30vh;
+
+            position: absolute;
+            left: 25vw;
+            top: 35vh;
+
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 100%;
+            border: 1vmin solid black;
+        }
+
+        #loading div {
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +83,16 @@
         <h1 id="Con">Con</h1>
         <h1 id="ti">ti</h1>
         <h1 id="nents">nents</h1>
+    </div>
+
+    <div id="loading">
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+        <div id="5"></div>
+        <div id="6"></div>
+        <div id="7"></div>
     </div>
     
     <div id="continents">
