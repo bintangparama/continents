@@ -118,8 +118,8 @@ AddLight(0, 0, -10);
 
 var syllables = [
     { element: document.getElementById('Con'), height: 3.5, up: false},
-    { element: document.getElementById('ti'), height: 4, up: true },
-    { element: document.getElementById('nents'), height: 4.5, up: true }
+    { element: document.getElementById('ti'), height: 5, up: true },
+    { element: document.getElementById('nents'), height: 6.5, up: true }
 ];
 
 syllables.forEach((val) => {
@@ -188,7 +188,7 @@ function onRender(){
                 SetVisiblePlanets(antartica);
                 break;
             case 'Australia':
-                HandlePlanet(australia, DegToRad(-20), DegToRad(170), 0);
+                HandlePlanet(australia, DegToRad(-35), DegToRad(165), 0);
 
                 SetAllPlanetRot(australia);
 
