@@ -35,53 +35,69 @@ window.addEventListener('resize', () => {
 var selection = '';
 var previousplanet;
 var earth, africa, asia, europe, namerica, samerica, antartica, australia;
-LoadOBJWithMTL('https://bintangparama.github.io/continents/models/Earth/earth.mtl', 'https://bintangparama.github.io/continents/models/Earth/earth.obj', (ear) => {
+LoadOBJWithMTL('/continents/models/Earth/earth.mtl', '/continents/models/Earth/earth.obj', (ear) => {
     earth = ear;
     previousplanet = earth;
     earth.scale.set(2, 2, 2);
     scene.add(earth);
 
-    LoadOBJWithMTL('https://bintangparama.github.io/continents/models/Africa/Africa.mtl', 'https://bintangparama.github.io/continents/models/Africa/Africa.obj', (afr) => {
+    document.getElementById('1').style.backgroundColor = 'green';
+
+    LoadOBJWithMTL('/continents/models/Africa/Africa.mtl', '/continents/models/Africa/Africa.obj', (afr) => {
         africa = afr;
         africa.scale.set(2, 2, 2);
         africa.visible = false;
         scene.add(africa);
 
-        LoadOBJWithMTL('https://bintangparama.github.io/continents/models/Asia/Asia.mtl', 'https://bintangparama.github.io/continents/models/Asia/Asia.obj', (asi) => {
+        document.getElementById('2').style.backgroundColor = 'green';
+
+        LoadOBJWithMTL('/continents/models/Asia/Asia.mtl', '/continents/models/Asia/Asia.obj', (asi) => {
             asia = asi;
             asia.scale.set(2, 2, 2);
             asia.visible = false;
             scene.add(asia);
+    
+            document.getElementById('3').style.backgroundColor = 'green';
 
-            LoadOBJWithMTL('https://bintangparama.github.io/continents/models/Europe/Europe.mtl', 'https://bintangparama.github.io/continents/models/Europe/Europe.obj', (eur) => {
+            LoadOBJWithMTL('/continents/models/Europe/Europe.mtl', '/continents/models/Europe/Europe.obj', (eur) => {
                 europe = eur; 
                 europe.scale.set(2, 2, 2);
                 europe.visible = false;
                 scene.add(europe);
+    
+                document.getElementById('4').style.backgroundColor = 'green';
 
-                LoadOBJWithMTL('https://bintangparama.github.io/continents/models/NAmerica/NAmerica.mtl', 'https://bintangparama.github.io/continents/models/NAmerica/NAmerica.obj', (nam) => {
+                LoadOBJWithMTL('/continents/models/NAmerica/NAmerica.mtl', '/continents/models/NAmerica/NAmerica.obj', (nam) => {
                     namerica = nam; 
                     namerica.scale.set(2, 2, 2);
                     namerica.visible = false;
                     scene.add(namerica);
+    
+                    document.getElementById('5').style.backgroundColor = 'green';
 
-                    LoadOBJWithMTL('https://bintangparama.github.io/continents/models/SAmerica/SAmerica.mtl', 'https://bintangparama.github.io/continents/models/SAmerica/SAmerica.obj', (sam) => {
+                    LoadOBJWithMTL('/continents/models/SAmerica/SAmerica.mtl', '/continents/models/SAmerica/SAmerica.obj', (sam) => {
                         samerica = sam; 
                         samerica.scale.set(2, 2, 2);
                         samerica.visible = false;
                         scene.add(samerica);
+    
+                        document.getElementById('6').style.backgroundColor = 'green';
 
-                        LoadOBJWithMTL('https://bintangparama.github.io/continents/models/Antartica/Antartica.mtl', 'https://bintangparama.github.io/continents/models/Antartica/Antartica.obj', (ant) => {
+                        LoadOBJWithMTL('/continents/models/Antartica/Antartica.mtl', '/continents/models/Antartica/Antartica.obj', (ant) => {
                             antartica = ant; 
                             antartica.scale.set(2, 2, 2);
                             antartica.visible = false;
                             scene.add(antartica);
+    
+                            document.getElementById('7').style.backgroundColor = 'green';
 
-                            LoadOBJWithMTL('https://bintangparama.github.io/continents/models/Australia/Australia.mtl', 'https://bintangparama.github.io/continents/models/Australia/Australia.obj', (aus) => {
+                            LoadOBJWithMTL('/continents/models/Australia/Australia.mtl', '/continents/models/Australia/Australia.obj', (aus) => {
                                 australia = aus; 
                                 australia.scale.set(2, 2, 2);
                                 australia.visible = false;
                                 scene.add(australia);
+
+                                document.body.removeChild(document.getElementById('loading'));
                             });
                         });
                     });
