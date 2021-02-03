@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Earth </title>
+
+    <script defer src="./libraries/three.js"></script>
+    <script defer src="./libraries/MTLLoader.js"></script>
+    <script defer src="./libraries/OBJLoader.js"></script>
+    <script defer src="./libraries/TweenMax.min.js"></script>
+    
+    <script defer src="./js/functions.js"></script>
+
+    <script defer src="./js/index.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+            letter-spacing: 0.2vw;
+        }
+
+        #continents {
+            width: 85vw;
+            height: 7.5vh;
+            display: flex;
+            justify-content: space-evenly;
+
+            position: absolute;
+            left: 7.5vw;
+            top: 90vh;
+        }
+
+        #continents button {
+            width: 10vmax;
+            border-radius: 2vmin;
+            background-color: #ffffff;
+        }
+
+        #continents button:hover {
+            background-color: #eeeeee;
+        }
+
+        #title {
+            position: absolute;
+            width: 30vw;
+            height: 10vh;
+
+            left: 35vw;
+            top: 1vh;
+            text-align: center;
+
+            display: flex;
+            justify-content: center;
+        }
+        #title h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h1 id="Con">Con</h1>
+        <h1 id="ti">ti</h1>
+        <h1 id="nents">nents</h1>
+    </div>
+    
+    <div id="continents">
+        <button onclick="selectcontinent('Africa')">Africa</button>
+        <div></div>
+        <button onclick="selectcontinent('Asia')">Asia</button>
+        <div></div>
+        <button onclick="selectcontinent('Europe')">Europe</button>
+        <div></div>
+        <button onclick="selectcontinent('North America')">North America</button>
+        <div></div>
+        <button onclick="selectcontinent('South America')">South America</button>
+        <div></div>
+        <button onclick="selectcontinent('Antartica')">Antartica</button>
+        <div></div>
+        <button onclick="selectcontinent('Australia')">Australia</button>
+    </div>
+</body>
+</html>
